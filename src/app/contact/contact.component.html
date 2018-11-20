@@ -1,0 +1,45 @@
+<div class="container">
+
+  <div class="wrapper-inner">
+    <h1>Feel Free to Contact Me</h1>
+
+    <div class="image-wrapper">
+      <img src="../../assets/contact.jpg">
+    </div>
+
+    <div class="contact-wrapper">
+
+      <div class="contact-form">
+        <form #contactForm="ngForm" id="gform">
+
+          <!-- <label class="sr-only">Keep this field blank</label> -->
+          <input id="honeypot" type="text" name="honeypot" value="" [(ngModel)]="contact.honeypot" #honeypot="ngModel"/>
+
+          <mat-form-field class="form-text-input name" color="accent">
+            <input matInput placeholder="What's your name?" required name="name" id="name" type="text" minlength="4" [(ngModel)]="contact.name" #name="ngModel">
+          </mat-form-field>
+
+          <mat-form-field class="form-text-input email" color="accent">
+            <input matInput placeholder="What's your email?" required name="email" id="email" type="email" [(ngModel)]="contact.email" #email="ngModel">
+          </mat-form-field>
+
+          <div class="clearfix"></div>
+
+          <mat-form-field class="form-textarea" color="accent">
+            <textarea matInput placeholder="What's on your mind?" required name="message" id="message" rows="10" [(ngModel)]="contact.message" #message="ngModel"></textarea>
+          </mat-form-field>
+
+          <div class="clearfix"></div>
+
+          <button mat-raised-button color="accent" (click)="sendMail()" [disabled]="contactForm.invalid">Send Mail</button>
+
+        </form>
+
+        <div id="thankyou_message">
+          <h2>Thanks for contacting me! I'll get back to you soon!</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

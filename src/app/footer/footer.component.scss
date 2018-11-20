@@ -1,0 +1,64 @@
+@import "src/custom-style.scss";
+
+footer {
+  padding: 20px;
+  background-color: mat-color($va-app-primary);
+  color: mat-color($va-app-primary, 400);
+
+  text-align: center;
+  
+  .copy-rigth .address {
+    color: purple
+  }
+
+  @media screen and (max-width: 600px) {
+    padding: 10px;
+
+    .contact {
+      .logo, .address, .email, .social {
+        display: inline-block;
+        margin: 0 15px;
+
+        p {
+          -webkit-margin-before: 0.5em;
+          -webkit-margin-after: 0.5em;
+        }
+      }
+
+      .email {
+        font-size: 14px;
+      }
+    }
+  }
+
+  a {
+    color: mat-color($va-app-accent);
+    text-decoration: none;
+    &:hover {
+      color: mat-color($va-app-primary, 100);
+    }
+  }
+
+  .logo img {
+    height: 50px;
+  }
+
+  .social{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    li {
+      display: inline-block;
+      margin: 0 5px;
+      font-size: 12px;
+    }
+  }
+
+  .logo, .address, .email, .social {
+    display: inline-block;
+    margin: 0 30px;
+  }
+  
+}

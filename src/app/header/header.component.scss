@@ -1,0 +1,19 @@
+@import "src/custom-style.scss";
+
+.home-button {
+  padding-top: 2px;
+  margin-bottom: 2px;
+
+  .logo {
+    height: 50px;
+  }
+}
+
+.fill-remaining-space {
+  /*This fills the remaining space, by using flexbox. Every toolbar row uses a flexbox row layout. */
+  flex: 1 1 auto;
+}
+
+.galleries-button {
+  color: mat-color($va-app-primary);
+}

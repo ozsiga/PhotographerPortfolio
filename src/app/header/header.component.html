@@ -1,0 +1,31 @@
+<mat-toolbar color="primary">
+
+  <button mat-button routerLink="/" class="home-button">
+    <img src="../../assets/Logo.jpg" class="logo">
+  </button>
+
+  <!-- This fills the remaining space of the current row -->
+  <span class="fill-remaining-space"></span>
+
+  <div fxLayout="row" fxShow="false" fxShow.gt-sm>
+    <button mat-raised-button [matMenuTriggerFor]="galleries" class="galleries-button">Galleries</button>
+    <button mat-button routerLink="/about">About</button>
+    <button mat-button routerLink="/contact">Contact</button>
+  </div>
+
+  <button mat-button [mat-menu-trigger-for]="menu" fxHide="false" fxHide.gt-sm>
+    <mat-icon>menu</mat-icon>
+  </button>
+
+</mat-toolbar>
+
+<mat-menu x-position="before" #menu="matMenu" [overlapTrigger]="false">
+  <button mat-menu-item [matMenuTriggerFor]="galleries">Galleries</button>
+  <button mat-menu-item routerLink="/about">About</button>
+  <button mat-menu-item routerLink="/contact">Contact</button>
+</mat-menu>
+
+<mat-menu #galleries="matMenu">
+  <button mat-menu-item routerLink="/analog">Analog</button>
+  <button mat-menu-item routerLink="/digital">Digital</button>
+</mat-menu>

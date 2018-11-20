@@ -1,0 +1,45 @@
+@import "src/custom-style.scss";
+
+mat-card {
+  margin: 10px;
+  &:hover {
+    background-color: mat-color($va-app-primary, 100);
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 715px){
+    padding: 20px;
+  }
+  @media screen and (max-width: 480px){
+    padding: 16px;
+  }
+  @media screen and (max-width: 330px){
+    padding: 8px;
+  }
+
+  mat-card-title {
+    text-align: center;
+
+    @media screen and (max-width: 715px){
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    @media screen and (max-width: 480px){
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+  }
+
+  mat-card-content {
+    img {
+      max-height: 400px;
+
+      @media screen and (max-width: 715px){
+        max-height: calc(55vw);
+      }
+      @media screen and (max-width: 480px){
+        max-height: calc(50vw);
+      }
+    }
+  }
+}
