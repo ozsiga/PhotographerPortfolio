@@ -23,6 +23,7 @@
     "@angular/platform-browser": "^7.0.4",
     "@angular/platform-browser-dynamic": "^7.0.4",
     "@angular/router": "^7.0.4",
+    "@material/animation": "^0.41.0",
     "@material/theme": "^0.41.0",
     "angular-font-awesome": "^3.1.2",
     "angular2-image-gallery": "^6.0.2",

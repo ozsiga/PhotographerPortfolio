@@ -1,35 +1,39 @@
 @import "src/custom-style.scss";
+@import "../../custom-style.scss";
+
+$footer-text-color: #1a66e0;
 
 footer {
   padding: 20px;
   background-color: mat-color($va-app-primary);
   color: mat-color($va-app-primary, 400);
 
-  text-align: center;
-  
-  .copy-rigth .address {
-    color: purple
-  }
+  .contact {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 
-  @media screen and (max-width: 600px) {
-    padding: 10px;
-
-    .contact {
-      .logo, .address, .email, .social {
-        display: inline-block;
-        margin: 0 15px;
-
-        p {
-          -webkit-margin-before: 0.5em;
-          -webkit-margin-after: 0.5em;
+    .info {
+      .email, .phone {
+        &:hover {
+          background-color: white;
         }
       }
 
-      .email {
-        font-size: 14px;
+      p {
+        a {
+          color: black;
+        }        
+        font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+      }
+
+      .copyright {
+        color: black;
       }
     }
   }
+
+  text-align: center;
 
   a {
     color: mat-color($va-app-accent);
@@ -61,4 +65,27 @@ footer {
     margin: 0 30px;
   }
   
+}
+
+@media screen and (max-width: 600px) {
+  .footer {
+    padding: 10px;
+
+    .contact {
+      flex-direction: column;
+      .logo, .address, .info, .social {
+        display: inline-block;
+        margin: 0 15px;
+  
+        p {
+          -webkit-margin-before: 0.5em;
+          -webkit-margin-after: 0.5em;
+        }
+      }
+  
+      .info {
+        font-size: 14px;
+      }
+    }
+  }  
 }

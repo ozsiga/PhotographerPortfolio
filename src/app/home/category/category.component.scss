@@ -3,7 +3,7 @@
 mat-card {
   margin: 10px;
   &:hover {
-    background-color: mat-color($va-app-primary, 100);
+    //background-color: mat-color($va-app-primary, 100);
     cursor: pointer;
   }
 
@@ -33,6 +33,7 @@ mat-card {
   mat-card-content {
     img {
       max-height: 400px;
+      max-width: 100%;
 
       @media screen and (max-width: 715px){
         max-height: calc(55vw);

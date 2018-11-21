@@ -17,8 +17,8 @@ export class AnalogComponent implements OnInit {
   ngOnInit() {
     this.galleryOptions = [
        {
-           width: '700px',
-           height: '500px',
+           width: '1280px',
+           height: '850px',
            thumbnailsPercent: 25,
            thumbnailsColumns: 6,
            thumbnailMargin: 5,
@@ -37,11 +37,13 @@ export class AnalogComponent implements OnInit {
             imagePercent: 80,
             thumbnailsPercent: 20,
             thumbnailsMargin: 5,
-            thumbnailMargin: 5
+            thumbnailMargin: 5,
+            preview: false,
+            previewSwipe: true
         },
         // max-width 400
         {
-            breakpoint: 400,
+            breakpoint: 450,
             preview: false
         }
   ];

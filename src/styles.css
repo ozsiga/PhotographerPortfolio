@@ -1,8 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
 
 body {
-    margin: 0;
-    background-color: grey;
+    margin: 0;  
+    background-color: #3f51b5  
   }
   
   app-root {

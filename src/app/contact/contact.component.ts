@@ -15,7 +15,7 @@ export class ContactComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {
-    this.contact = new Contact();
+    this.contact = new Contact();    
   }
 
   sendMail() {
