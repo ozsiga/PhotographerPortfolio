@@ -1,6 +1,10 @@
-@import "src/custom-style.scss";
+// @import "src/custom-style.scss";
 
+.container{
+  background-color: #3f51b5
+}
 mat-card {
+  background-color: #3f51b5;
   margin: 10px;
   &:hover {
     //background-color: mat-color($va-app-primary, 100);

@@ -5,6 +5,7 @@ import { AboutComponent } from "../about/about.component";
 import { ContactComponent } from "../contact/contact.component";
 import { AnalogComponent } from "../galleries/analog/analog.component";
 import { DigitalComponent } from "../galleries/digital/digital.component";
+import { CategoryComponent } from '../home/category/category.component';
 
 const routes: Routes = [
    {
@@ -27,6 +28,10 @@ const routes: Routes = [
      path: 'digital',
      component: DigitalComponent
    },
+   {
+    path: 'category',
+    component: CategoryComponent
+  },
   {
     path: '**',
     redirectTo: ''

@@ -28,12 +28,12 @@ export class ContactComponent implements OnInit {
       name: this.contactForm.form.controls.name.value,
       email: this.contactForm.form.controls.email.value,
       message: this.contactForm.form.controls.message.value,
-      honeypot: this.contactForm.form.controls.honeypot.value
+      // honeypot: this.contactForm.form.controls.honeypot.value
     };
 
-    if (this.validateHuman(data.honeypot)) {  //if form is filled, form will not be submitted
-      return false;
-    }
+    // if (this.validateHuman(data.honeypot)) {  //if form is filled, form will not be submitted
+    //   return false;
+    // }
 
     let xhr: XMLHttpRequest = new XMLHttpRequest();
     xhr.open('POST', this.postUrl);
@@ -53,14 +53,14 @@ export class ContactComponent implements OnInit {
     xhr.send(encoded);
   }
 
-  validateHuman(honeypot) {
-    if (honeypot) {  //if hidden form filled up
-      console.log("Robot Detected!");
-      return true;
-    } else {
-      console.log("Welcome Human!");
-    }
-  }
+  // validateHuman(honeypot) {
+  //   if (honeypot) {  //if hidden form filled up
+  //     console.log("Robot Detected!");
+  //     return true;
+  //   } else {
+  //     console.log("Welcome Human!");
+  //   }
+  // }
 
 }
 
@@ -68,6 +68,6 @@ export class Contact {
   name: string;
   email: string;
   message: string;
-  honeypot: string;
+  // honeypot: string;
 }
 
