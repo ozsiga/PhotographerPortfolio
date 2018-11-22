@@ -13,7 +13,7 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { MaterialModule } from "./material/material.module";
 import { CategoryComponent } from './home/category/category.component';
 import { ContactComponent } from './contact/contact.component';
-import { GalleriesComponent } from './galleries/galleries.component';
+// import { GalleriesComponent } from './galleries/galleries.component';
 import 'hammerjs';
 import { AnalogComponent } from './galleries/analog/analog.component';
 import { DigitalComponent } from './galleries/digital/digital.component';
@@ -30,7 +30,7 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
     HomeComponent,
     CategoryComponent,
     ContactComponent,
-    GalleriesComponent,
+    // GalleriesComponent,
     AnalogComponent,
     DigitalComponent,
   ],

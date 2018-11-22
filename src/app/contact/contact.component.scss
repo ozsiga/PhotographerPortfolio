@@ -22,10 +22,7 @@
             filter: grayscale(80%);
         }
     }
-    #honeypot {
-        display: none;
-        /*makes the field not visible to humans*/
-    }
+    
     .form-text-input {
         width: 45%;
         flex: 1 1 auto;

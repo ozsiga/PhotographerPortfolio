@@ -12,9 +12,6 @@
       <div class="contact-form">
         <form #contactForm="ngForm" id="gform">
 
-          <!-- <label class="sr-only">Keep this field blank</label> -->
-          <input id="honeypot" type="text" name="honeypot" value="" [(ngModel)]="contact.honeypot" #honeypot="ngModel" />
-
           <mat-form-field class="form-text-input name" [color]="black">
             <input matInput placeholder="What's your name?" required name="name" id="name" type="text" minlength="4"
               [(ngModel)]="contact.name" #name="ngModel"> </mat-form-field>
